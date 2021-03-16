@@ -82,7 +82,7 @@ p.replace('dog', 'monkey');
 ### String Template Literals
 ### (Meaning: Strings and variables in the same line)
 
-\`Hello! My name is ${myName.toUpperCase} and I'm ${myAge}.`
+\`Hello! My name is ${myName.toUpperCase} and I'm ${myAge}.\`
 (Output: Hello! My name is DANIEL and I'm 28.)
 
 ## Objects
