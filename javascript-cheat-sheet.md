@@ -109,7 +109,34 @@ let userInput = prompt("Please enter something.")
 
 userInput will be what the user typed in the popup window.
 
-### Arrays
+### Object Literals
+
+**Declaring**
+
+const myWife = {
+    name: 'Sara Harka',
+    age: 25,
+    hairColor: 'red',
+    attributes: ['#smart', '#kind', '#important'],
+    hot: true
+}
+
+**Accessing, editing and adding**
+
+myWife['age']; (Output: '25')
+**or**
+myWife.age; (Output: '25')
+
+Can be updated:
+myWife.age = 99;
+
+New item can be added:
+myWife.favAnimal = 'cat';
+**or**
+myWife['favAnimal'] = 'cat';
+(Adds cat to the object.)
+
+## Arrays
 
 let stuff = [true, 69, 'cat', null];
 
@@ -125,4 +152,48 @@ arrayVariable.unshift('string'); (Unshifts a string to start.)
 
 let cats = ['Misty', 'Kitty']
 let dogs = ['Barky', 'Doggy']
-let animals = cats,concat(dogs);
+let animals = cats.concat(dogs);
+
+cats.includes('Misty');
+(Checks if array includes a string. Boolean answer.)
+
+dogs.indexOf('Barky');
+(Tells position of an array item, like indexOf string.)
+(-1 means not found.)
+
+animals.reverse(); (Reverses array order.)
+
+animals.slice(1,3);
+(Returns the 2nd and 3rd item. 4th not included.)
+(-nums also work.)
+
+months.splice(4, 1, 'May');
+(Replaces 1 element at index 4.)
+console.log(months);
+(Output: Array ["Jan", "Feb", "March", "April", "May"])
+
+**Sort**
+
+const months = ['March', 'Jan', 'Feb', 'Dec'];
+months.sort();
+console.log(months);
+(Output: Array ["Dec", "Feb", "Jan", "March"])
+
+const array1 = [1, 30, 4, 21, 100000];
+array1.sort();
+console.log(array1);
+(Output: Array [1, 100000, 21, 30, 4])
+
+
+**Functions**
+
+function functionName() {
+  console.log("Hello World");
+}
+functionName();
+
+
+function testFun(param1, param2) {
+  console.log(param1, param2);
+}
+testFun(param1, param2); 
